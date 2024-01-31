@@ -1,4 +1,4 @@
-package tranuytrieuvi.tech.simpleweb;
+package tech.tranuytrieuvi.simpleweb;
 
 import lombok.experimental.StandardException;
 

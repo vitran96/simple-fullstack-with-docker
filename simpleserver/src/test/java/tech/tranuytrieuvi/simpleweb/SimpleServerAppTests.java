@@ -1,10 +1,10 @@
-package tranuytrieuvi.tech.simpleweb;
+package tech.tranuytrieuvi.simpleweb;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SimplewebApplicationTests {
+class SimpleServerAppTests {
 
 	@Test
 	void contextLoads() {

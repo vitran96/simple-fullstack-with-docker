@@ -1,17 +1,16 @@
-package tranuytrieuvi.tech.simpleweb;
+package tech.tranuytrieuvi.simpleweb.controller;
 
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+import tech.tranuytrieuvi.simpleweb.repo.BookRepo;
+import tech.tranuytrieuvi.simpleweb.ResourceNotFoundException;
+import tech.tranuytrieuvi.simpleweb.model.Book;
 
-import java.util.Arrays;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.UUID;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
 @AllArgsConstructor
 public class BookController {
 

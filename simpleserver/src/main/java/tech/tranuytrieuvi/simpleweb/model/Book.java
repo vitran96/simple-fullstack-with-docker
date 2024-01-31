@@ -1,8 +1,6 @@
-package tranuytrieuvi.tech.simpleweb;
+package tech.tranuytrieuvi.simpleweb.model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -15,7 +13,8 @@ import java.util.UUID;
 @AllArgsConstructor
 @Data
 public class Book {
-    @Column
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
     @Column
     private String title;
