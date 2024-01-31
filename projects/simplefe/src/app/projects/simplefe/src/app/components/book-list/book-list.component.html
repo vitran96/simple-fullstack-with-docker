@@ -1,0 +1,20 @@
+<div class="list row">
+  <h4>Books</h4>
+  <div class="col-md-8">
+    <div class="input-group mb-3">
+      <!-- Some top button -->
+    </div>
+  </div>
+  <div class="col-md-6">
+    <ul class="list-group">
+      @for (book of books; track book.id; let i = $index) {
+        <li class="list-group-item" (click)="setActiveBook(book, i)">
+          {{book.title}}
+        </li>
+      }
+    </ul>
+  </div>
+  <div class="col-md-6">
+    <app-book-details [viewMode]="true" [book]="currentBook"></app-book-details>
+  </div>
+</div>
