@@ -1,5 +1,6 @@
 package tech.tranuytrieuvi.simpleweb.controller;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -10,6 +11,7 @@ import tech.tranuytrieuvi.simpleweb.model.Book;
 import java.util.List;
 import java.util.UUID;
 
+@Tag(name = "Book", description = "The Book API")
 @RestController
 @AllArgsConstructor
 public class BookController {
