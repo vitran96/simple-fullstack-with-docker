@@ -20,10 +20,10 @@ tar -xvf simpleserver.tar.gz
 
 # Create Angular app
 # SCSS
-# No telemetry
-# SCSS
-ng new simplefe --style=scss --skip-telemetry --strict=true
+ng new --no-create-application
+ng generate application simplefe --style=scss
 
+# ...
 ```
 
 ## Start development
@@ -32,4 +32,5 @@ ng new simplefe --style=scss --skip-telemetry --strict=true
 mvn compile spring-boot:run -pl simpleserver
 
 # npm
+npm watch
 ```
