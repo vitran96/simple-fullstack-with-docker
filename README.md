@@ -34,3 +34,26 @@ mvn compile spring-boot:run -pl simpleserver
 # npm
 npm watch
 ```
+
+## Build and Package a Docker image
+```bash
+# Build
+mvn -pl simpleserver clean
+
+npm install
+npm run build
+
+mvn -pl simpleserver -DskipTests compile package
+
+docker build -f Dockerfile.app -t simpleweb .
+```
+
+## Build within a Docker container
+```bash
+docker build -t simpleweb .
+```
+
+## Run the Docker image
+```bash
+docker run -p 8080:8080 simpleweb
+```
