@@ -1,12 +1,11 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Book } from '../models/book.model';
-// import { isDevMode } from '@angular/core';
-// import { environment } from 'src/environments/environment';
-declare let process: any;
-const env = process.env.NODE_ENV;
+import { environment } from './../../../../../../environments/environment';
 
-const baseUrl = env === "development" ? 'http://localhost:8080/api/v1' : '/api/v1';
+const baseUrl = environment.baseUrl;
+
+console.log("baseUrl", baseUrl);
 
 @Injectable({
   providedIn: 'root'
