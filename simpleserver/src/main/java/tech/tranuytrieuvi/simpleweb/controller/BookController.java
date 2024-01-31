@@ -11,9 +11,10 @@ import tech.tranuytrieuvi.simpleweb.model.Book;
 import java.util.List;
 import java.util.UUID;
 
+@AllArgsConstructor
 @Tag(name = "Book", description = "The Book API")
 @RestController
-@AllArgsConstructor
+@RequestMapping("/api/v1")
 public class BookController {
 
     @Autowired
